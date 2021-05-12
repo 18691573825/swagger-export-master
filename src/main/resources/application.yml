@@ -1,0 +1,41 @@
+server:
+  port: 1314
+  tomcat:
+    max-threads: 100
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: swaggerdoc
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+    
+module:
+  list:
+    - tag: work
+      swaggerUrl: http://localhost:8000/v2/api-docs
+      exportDocName: 云服务平台
+#    - tag: contract
+#      swaggerUrl: http://devbrokercontract.newtest.huaxiacloud.com/v2/api-docs
+#      exportDocName: Broker-订单域-合同管理-接口文档
+#    - tag: invoice
+#      swaggerUrl: http://devbrokerinvoice.newtest.huaxiacloud.com/v2/api-docs
+#      exportDocName: Broker-订单域-发票管理-接口文档
+    #- tag: contract
+     # swaggerUrl: http://devbrokercontract.newtest.huaxiacloud.com/v2/api-docs
+     # exportDocName: Broker-合同-API文档
+    #- tag: finance 
+     # swaggerUrl: http://devbrokerfinance.newtest.huaxiacloud.com/v2/api-docs
+      #exportDocName: Broker-账务-API文档
+     
+
+
+
+
